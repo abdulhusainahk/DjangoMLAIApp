@@ -1,0 +1,7 @@
+
+1)Model Development (Python3, Tensorflow, Keras Tentative )
+2)Backend Development(Django Framework Tentative )
+3)FrontEnd Development(Reactjs and Django Framework Tentative )
+4)Database Management(Firebase or Mysql Tentative)
+
+
