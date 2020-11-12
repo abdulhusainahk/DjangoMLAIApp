@@ -1,7 +1,28 @@
 
+The Implementation flow for the system:
+	input: text file with Question , Repective answer,Candidates Answer
+		and marks of the question
+	output: score based on contribution and total marks eg (3/5) 
+	
+
 1)Model Development (Python3, Tensorflow, Keras Tentative )
+  model input: 2 sentences to match
+  model output: matching degree(range from 0 to 1)
+  Now the model building involves training on the question answer dataset
+
+  In LSTM model
+
+  Each sentance either question or answer is tokentized(broken down into root words) and then each word is vectorized
+  by using googles word2vec (suggested in paper ie each word in converted into a 1 by 300 dimension vector)
+
+  -The orginal ,forward and the backward symantic vectors of question and answer are mapped
+  generating 9 n by n matrix ( where n is the number of tokenized words)
+
+  -These matrix are fed to the cnn model(the number of hidden layers are not specified in paper.) 
+  -The number of convolution and pooling layers will have to be determined with try and error
+
 2)Backend Development(Django Framework Tentative )
 3)FrontEnd Development(Reactjs and Django Framework Tentative )
-4)Database Management(Firebase or Mysql Tentative)
+4)Database Management(Mysql Tentative)
 
 
